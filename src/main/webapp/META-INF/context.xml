@@ -1,0 +1,17 @@
+<Context>
+<!-- Configuration de la ressource partagée -->
+
+  <Resource name="jdbc/tp2" 
+  			auth="Container" type="javax.sql.DataSource"
+               maxActive="20" maxIdle="5" maxWait="10000"
+               username="root" password="" 
+               driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/tp2?useSSL=false"/>
+
+</Context>
+
+<!--  
+              	Size of pool under heavy load = maxActive = 20
+				Size of pool under low load = maxIdle = 5
+				
+-->
